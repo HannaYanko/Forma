@@ -1,5 +1,6 @@
 <?php
-require 'ElementForm.php';
+namespace MyForm;
+
 class Text extends ElementForm
 {
 

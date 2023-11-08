@@ -1,20 +1,23 @@
 <?php
+
+namespace MyForm;
+
 class Generator
 {
     private $elements = [];
 
-    public function addElement(ElementForm $element)
+
+    public function addElement(Text $element)
     {
         $this->elements[] = $element;
     }
 
     public function generateForm()
     {
-        $html = "<form>";
+        $i = "";
         foreach ($this->elements as $element) {
-            $html .= $element->render();
+            $i .= $element->render();
         }
-        $html .= "</form>";
-        echo $html;
+        echo $i;
     }
 }

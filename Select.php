@@ -1,4 +1,5 @@
 <?php
+namespace MyForm;
 class Select extends ElementForm
 {
     private $options;
@@ -11,14 +12,11 @@ class Select extends ElementForm
 
     public function render()
     {
-        $html = "<select name='{$this->name}'>";
+        $i = "<select name='{$this->name}'>";
         foreach ($this->options as $option) {
-            $html .= "<option value='$option'>$option</option>";
+            $i .= "<option value='$option'>$option</option>";
         }
-        $html .= "</select>" . PHP_EOL;
-        return $html;
+        $i .= "</select>" . PHP_EOL;
+        return $i;
     }
-
-
-
 }
