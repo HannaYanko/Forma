@@ -1,5 +1,6 @@
 <?php
-namespace MyForm;
+namespace MyForm\ElementForm;
+
 class Select extends ElementForm
 {
     private $options;

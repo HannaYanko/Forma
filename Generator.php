@@ -1,13 +1,13 @@
 <?php
-
 namespace MyForm;
+
+use MyForm\ElementForm\ElementForm;
 
 class Generator
 {
     private $elements = [];
 
-
-    public function addElement(Text $element)
+    public function addElement(ElementForm $element)
     {
         $this->elements[] = $element;
     }
@@ -21,3 +21,7 @@ class Generator
         echo $i;
     }
 }
+
+
+
+

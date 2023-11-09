@@ -1,5 +1,6 @@
 <?php
-namespace MyForm;
+namespace MyForm\ElementForm;
+
 class Button extends ElementForm
 {
     public function render()

@@ -1,9 +1,10 @@
 <?php
+namespace MyForm\ElementForm;
 
-namespace MyForm;
 abstract class ElementForm
 {
     protected $name;
+
 
     public function __construct($name)
     {
